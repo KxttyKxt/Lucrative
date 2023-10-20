@@ -1,0 +1,68 @@
+{
+	id: "0B93D6DE0A6EC90F"
+	group: "4DB7D1605B05DB1A"
+	order_index: 1
+	filename: "vons_gay_things"
+	title: "Von's gay things"
+	icon: {
+		id: "minecraft:player_head"
+		Count: 1b
+		tag: {
+			SkullOwner: {
+				Id: [I;
+					-954082034
+					-1035252017
+					-1580047588
+					-1112298420
+				]
+				Properties: {
+					textures: [{
+						Value: "ewogICJ0aW1lc3RhbXAiIDogMTY5NzIyODI0NjQxMywKICAicHJvZmlsZUlkIiA6ICJjNzIxZGQwZWMyNGI0ZWNmYTFkMjYzMWNiZGIzYWM0YyIsCiAgInByb2ZpbGVOYW1lIiA6ICJ2b25tYXNzIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzU0NDkzMzdkM2Q3ZDkyNzNhM2U4N2MwNjY4MWY5Y2FjYzhkZThhMDRiZDcyYTA2NTZmYmRjMjFlODY2MDA2ZmIiCiAgICB9CiAgfQp9"
+						Signature: "ENVAG6MJQYNE1zFMAW8lLAFI4+lH1iuTh2BMOqtqnAGx1jcUAwvaK7h26RzgQ4578oduEEzS/4CSAhE2lhfTc4XJ7TyiNCXgC7OnmEqT4N0LwOQLRJ4xcmdrGHsBdQqPtks0MPGbBoamXMXsIcdeBZIr5ISgzmbdeTOLDt64pk/wPhnse7cD7D1Sb+JU5rz8tQhQw+wc/xp6Y3Vc667jkRFY/12A9u0m6IauexRJrBw2whO6kHbf3chSQX4IdPx/Sq3uv2BNwL8/+fg5IEm4fgK5Eeblc7Q0AJ5BrntKmE08mm0+RaCoYnoWd1rJ5FPSTUV85N0T5jnog2+GZ+kGXeLutVjkjyJInaU1O4EU/yPLGJv+881FDy4k0GTKCLQJppZlERHSFOzDOHI/6QRUYtNcuKBtzhMdjUWZzsz9ZNUKcvjuLBjT3ag0TNg+wEynjlq3MUax1M1u24ESfDI6SuoVn1f2C6OmLESfBD8A8DcTyi/PdNhzS6ZK5/CrsxjT5ay1YOx0yYXWp2CWk2bSYwA1OPklQPR48TOKxMBWlUUcxXQHMwCjdad1h18ovNVLBpJgFHOQPEHpnxWZ6F1z3Nn6E4VKEKwapy0AiRwGxKJe8FFTmgYymZ+ZikL+kuC8GLjt0EVkaQXJ3Yc/nSb3do9RAm2G4E37R7wqFxMGzi8="
+					}]
+				}
+				Name: "vonmass"
+			}
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		title: "Von's Death List"
+		icon: {
+			id: "simplyswords:gold_scythe"
+			Count: 1b
+			tag: {
+				Damage: 0
+			}
+		}
+		x: 0.0d
+		y: 0.0d
+		subtitle: "Kill Every Undead Boss with a Gold Scythe"
+		id: "30DEC8D291FA3B57"
+		tasks: [{
+			id: "6A4A53551F78F6FF"
+			type: "questsadditions:killnbt"
+			title: "Skeleton Tank (Undead Army)"
+			icon: {
+				id: "knight_quest:kq_skeleton_set_helmet"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			entity: "majruszsdifficulty:tank"
+			value: 1L
+			nbt: { }
+			checkItem: true
+			item: {
+				id: "simplyswords:gold_scythe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}]
+	}]
+	quest_links: [ ]
+}

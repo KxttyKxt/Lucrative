@@ -1,0 +1,35 @@
+{
+	id: "7211D56BC193E8C4"
+	group: "73229D137C63EB77"
+	order_index: 5
+	filename: "the_wizarding_world"
+	title: "The Wizarding World"
+	icon: "irons_spellbooks:mana_upgrade_orb"
+	subtitle: ["Iron's Spells 'n Spellbooks"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 0.0d
+		y: 0.0d
+		shape: "gear"
+		subtitle: "Unlocks: \"The Wizarding World\""
+		description: [
+			"The first step to creating your own spells, the inscrption table can be crafted by hand or found in various structures throughout the world."
+			""
+			"To get started, you'll need a spell book and a scroll."
+			"(Which you'll have both of if you chose to start as a wandering mage.)"
+		]
+		invisible: true
+		id: "46FA691912D2D7D0"
+		tasks: [{
+			id: "5403A5827FEBDCFA"
+			type: "observation"
+			title: "Discover an Inscription Table"
+			icon: "irons_spellbooks:inscription_table"
+			timer: 0L
+			observe_type: 0
+			to_observe: "irons_spellbooks:inscription_table"
+		}]
+	}]
+	quest_links: [ ]
+}

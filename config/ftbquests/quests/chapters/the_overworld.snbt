@@ -1,0 +1,505 @@
+{
+	id: "6A9B5C0CAC0BCB1C"
+	group: "41A9DF4B3815A94D"
+	order_index: 0
+	filename: "the_overworld"
+	title: "The Overworld"
+	icon: "minecraft:tall_grass"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "A new journey begins..."
+			x: -10.5d
+			y: -3.0d
+			shape: "rsquare"
+			subtitle: "A great adventure awaits..."
+			description: [
+				"Welcome to Lucrative, and thanks so much for taking interest!"
+				""
+				"This chapter should familiarize you with the content changes in this modpack, as well as challenging you to push further into the unknown."
+				""
+				"Quests are your friend! They are obviously optional, but should offer decent rewards and helpful information."
+				""
+				"Enjoy!"
+			]
+			size: 1.5d
+			id: "0EA0B0FBFF9FCC28"
+			tasks: [{
+				id: "3E0611217E7B7334"
+				type: "dimension"
+				dimension: "minecraft:overworld"
+			}]
+			rewards: [{
+				id: "5C85091C82248B41"
+				type: "item"
+				item: "minecraft:golden_apple"
+			}]
+		}
+		{
+			title: "Sophisticated Storage Solutions"
+			x: -9.0d
+			y: -0.5d
+			shape: "gear"
+			subtitle: "Unlocks: \"Storage! Moar Storage!\""
+			description: [
+				"In a world with so much loot to be plundered, a bundle will only go so far. To become the loot goblin of your dreams, you'll need a backpack."
+				""
+				"Or at least, you'll need a pouch first."
+			]
+			id: "0A0E9BD30B989936"
+			tasks: [{
+				id: "2C1479E51CBB4E74"
+				type: "item"
+				item: "sophisticatedbackpacks:backpack"
+			}]
+			rewards: [{
+				id: "64A0F6E7C23B0D4C"
+				type: "item"
+				item: "sophisticatedbackpacks:crafting_upgrade"
+			}]
+		}
+		{
+			title: "Normal Mode"
+			icon: "minecraft:zombie_head"
+			x: -2.0d
+			y: -2.0d
+			shape: "pentagon"
+			subtitle: "Everything as it should be."
+			description: [
+				"The default difficulty."
+				""
+				"Mobs will bleed when attacked (including you). This bleed chance is reduced by wearing armor. Bleeding is stopped with bandages."
+				""
+				"The Undead Army can invade if enough undead creatures are defeated."
+				""
+				"Certain activities can provide bonus loot."
+			]
+			dependencies: ["54852CC827825048"]
+			hide_text_until_complete: true
+			min_required_tasks: 1
+			id: "3672A028FF06A531"
+			tasks: [
+				{
+					id: "255F1DB3D07C27A0"
+					type: "advancement"
+					title: "Normal Mode"
+					advancement: "majruszsdifficulty:progressive_difficulty/normal_mode"
+					criterion: ""
+				}
+				{
+					id: "207B81FA2C3B821F"
+					type: "advancement"
+					secret: true
+					advancement: "minecraft:adventure/root"
+					criterion: ""
+				}
+			]
+			rewards: [{
+				id: "09EBBC9FB9ECCC99"
+				type: "item"
+				item: "majruszsdifficulty:bandage"
+				count: 8
+			}]
+		}
+		{
+			title: "Expert Mode"
+			icon: "minecraft:wither_skeleton_skull"
+			x: -2.0d
+			y: -1.0d
+			shape: "hexagon"
+			subtitle: "Turning up the heat..."
+			description: [
+				"The difficulty has increased to Expert."
+				""
+				"Bleeding I is replaced by Bleeding II, and chances to bleed are greater."
+				""
+				"The Undead Army surges in power."
+				"The pillagers also seem to have some new friends."
+				""
+				"Mobs are stronger but drop more loot."
+				"They are even stronger at night. Beware."
+				""
+				"Certain activities that gave rewards in normal mode are now more rewarding."
+			]
+			dependencies: ["3672A028FF06A531"]
+			hide_text_until_complete: true
+			id: "40D2F2C55DABC992"
+			tasks: [
+				{
+					id: "1F353029A2D64BCD"
+					type: "dimension"
+					title: "Enter the Nether"
+					icon: "minecraft:blaze_spawn_egg"
+					dimension: "minecraft:the_nether"
+				}
+				{
+					id: "383EAF7B9C3A03D3"
+					type: "advancement"
+					title: "Expert Mode"
+					secret: true
+					advancement: "majruszsdifficulty:progressive_difficulty/expert_mode"
+					criterion: ""
+				}
+			]
+			rewards: [{
+				id: "3F3957ACD442301A"
+				type: "item"
+				item: "majruszsdifficulty:golden_bandage"
+				count: 8
+			}]
+		}
+		{
+			title: "Master Mode"
+			icon: "minecraft:dragon_head"
+			x: -2.0d
+			y: 0.0d
+			shape: "octagon"
+			subtitle: "The real challenge."
+			description: [
+				"The difficulty has increased to Master."
+				""
+				"Bleeding II has increased to Bleeding III."
+				""
+				"Mobs are even more dangerous, especially at night."
+				""
+				"Certain activities that rewarded loot are now more lucrative."
+				""
+				"Good luck. You'll need it."
+			]
+			dependencies: ["40D2F2C55DABC992"]
+			hide_text_until_complete: true
+			min_required_tasks: 1
+			id: "49A70D9AE053E30F"
+			tasks: [
+				{
+					id: "54F57396C9789CFE"
+					type: "advancement"
+					title: "Kill the Enderdragon"
+					icon: "minecraft:dragon_breath"
+					advancement: "minecraft:end/kill_dragon"
+					criterion: ""
+				}
+				{
+					id: "1EB08E5FE1348A14"
+					type: "advancement"
+					title: "Master Mode"
+					secret: true
+					advancement: "majruszsdifficulty:progressive_difficulty/master_mode"
+					criterion: ""
+				}
+			]
+			rewards: [{
+				id: "21CA5509DFC5EB7F"
+				type: "item"
+				item: "majruszsdifficulty:enderium_ingot"
+			}]
+		}
+		{
+			title: "Progressive Difficulty"
+			icon: "majruszsdifficulty:undead_battle_standard"
+			x: -2.0d
+			y: -3.0d
+			shape: "diamond"
+			subtitle: "The game gets harder at certain milestones!"
+			description: [
+				"When you get hit by an enemy, you have a chance to bleed! You can stop bleeding by using a bandage."
+				""
+				"Your chance to bleed is also reduced by wearing armor."
+			]
+			id: "54852CC827825048"
+			tasks: [{
+				id: "3AE5BBB18AED6D17"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Pick a class!"
+			icon: "minecraft:bundle"
+			x: -12.0d
+			y: -3.0d
+			shape: "square"
+			subtitle: "See: \"Starter Kits\" Chapter"
+			description: [
+				"These are just some items to get your journey started."
+				""
+				"Your choice has no bearing on the course of your journey."
+				""
+				"Also, you can only pick one, so choose wisely!"
+			]
+			id: "5F70144EE34A0BAF"
+			tasks: [{
+				id: "16080514EDE98F31"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: -9.0d
+			y: -3.0d
+			subtitle: "3D Visualization and Persistent Storage [Disabled]"
+			description: [
+				"Crafting tables now hold items in them when exited."
+				""
+				"On top of this, ingredients inside of the crafting table are rendered on top (as they would be in item frames)."
+				"If a valid recipe exists for current items, the result is displayed floating above the table."
+				""
+				"...."
+				"Well, they *were*, but for some reason it was crashing."
+			]
+			dependencies: ["0EA0B0FBFF9FCC28"]
+			id: "4C144DE2165BA628"
+			tasks: [{
+				id: "76692A99665B5C47"
+				type: "observation"
+				title: "Inspect a Crafting Table"
+				icon: "minecraft:crafting_table"
+				timer: 20L
+				observe_type: 0
+				to_observe: "minecraft:crafting_table"
+			}]
+			rewards: [{
+				id: "59243A8A9E9ECF1B"
+				type: "xp"
+				icon: "minecraft:experience_bottle"
+				xp: 20
+			}]
+		}
+		{
+			title: "Obtain an Iron Longsword"
+			x: -7.0d
+			y: -3.0d
+			shape: "gear"
+			subtitle: "Unlocks: \"Armory Unleashed\""
+			description: [
+				"Lucrative adds many new weapons. The longsword is the most basic, and is essentially a direct upgrade to the vanilla sword."
+				""
+				"With the same attack speed and damage, the longsword has a slightly longer range, making it a superior--but still very orthodox--weapon."
+			]
+			dependencies: ["0C69D24C12FD7884"]
+			id: "22F2D81DBFBB9877"
+			tasks: [{
+				id: "7F9944DBA64DB827"
+				type: "item"
+				item: {
+					id: "simplyswords:iron_longsword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "6B91A8E56A8D39B4"
+				type: "item"
+				item: {
+					id: "shieldexp:iron_shield"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Craft a Wooden Shield"
+			x: -8.0d
+			y: -3.0d
+			subtitle: "An early-game repreive from projectiles."
+			description: [
+				"Lucrative includes new shields for players to utilize, as well as a few changes:"
+				""
+				"-=- Parrying -=-"
+				"Based on a shield's parry window, blocking an attack just before it strikes you will cause the damage (or projectile) to reflect back to your opponent."
+				"Parrying a skeleton's arrow back at it causes the skeleton to die instantly."
+				""
+				"Holding up a shield for too long causes it to go on cooldown when you release the blocking stance."
+				"As such, if you're unsure of the parry timing for an attack, your best bet is to spam your shield rapidly."
+				""
+				"-=- Responsiveness -=-"
+				"Shields now take effect as soon as they are raised (instead of taking about half a second to start blocking)."
+				""
+				"Beware: you can no longer indefinitely block attacks."
+				"Explosions force your shield into cooldown."
+				"Taking more hits in one usage (hold RMB) than the stamina on your shield forces it into cooldown."
+			]
+			dependencies: ["4C144DE2165BA628"]
+			id: "0C69D24C12FD7884"
+			tasks: [{
+				id: "12893AC4EDB24FF7"
+				type: "item"
+				item: {
+					id: "shieldexp:wooden_shield"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "71A261C580C09054"
+				type: "item"
+				title: "In case you don't get it right at first :)"
+				item: "majruszsdifficulty:bandage"
+				random_bonus: 4
+			}]
+		}
+		{
+			title: "Obtain Diamonds!"
+			x: -6.0d
+			y: -3.0d
+			subtitle: "A formidable resource, and a necessary one."
+			dependencies: ["22F2D81DBFBB9877"]
+			id: "1F3273938B672AD7"
+			tasks: [{
+				id: "2A562A024032449D"
+				type: "item"
+				item: "minecraft:diamond"
+			}]
+			rewards: [{
+				id: "0BE6B62650C0023D"
+				type: "item"
+				item: "minecraft:diamond"
+				count: 2
+				random_bonus: 6
+			}]
+		}
+		{
+			title: "Up your Arsenal!"
+			x: -8.0d
+			y: -0.5d
+			shape: "gear"
+			subtitle: "Unlocks: \"Fashion Souls\""
+			description: [
+				"The most powerful and snazzy of armors are at your disposal in Lucrative. Though the methods of obtaining these are a little unusual, they are far worth the effort."
+				""
+				"To begin, you'll need two things."
+				""
+				"The Great Chalice is obtained by smithing a cauldron with a copper block."
+				""
+				"Great Essence is usually obtained by breaking monster spawners. Beware: spawners are more dangerous than you might remember."
+			]
+			id: "67EA09D8FED4A6E2"
+			tasks: [
+				{
+					id: "3286A9134EFE24A3"
+					type: "item"
+					item: "knight_quest:kq_great_essence"
+					count: 3L
+				}
+				{
+					id: "60AF023942911B73"
+					type: "item"
+					item: "knight_quest:chalice_state_0"
+				}
+			]
+			rewards: [{
+				id: "023652578249A6BE"
+				type: "item"
+				item: "knight_quest:kq_goblet_empty"
+			}]
+		}
+		{
+			x: -7.0d
+			y: -0.5d
+			shape: "gear"
+			subtitle: "Unlocks: \"The Wizarding World\""
+			description: [
+				"The first step to creating your own spells, the inscrption table can be crafted by hand or found in various structures throughout the world."
+				""
+				"To get started, you'll need a spell book and a scroll."
+				"(Which you'll have both of if you chose to start as a wandering mage.)"
+			]
+			id: "240155933717C8DB"
+			tasks: [{
+				id: "7EB09FA92965B716"
+				type: "observation"
+				title: "Discover an Inscription Table"
+				icon: "irons_spellbooks:inscription_table"
+				timer: 0L
+				observe_type: 0
+				to_observe: "irons_spellbooks:inscription_table"
+			}]
+		}
+		{
+			title: "The best way to the heart..."
+			x: -6.0d
+			y: -0.5d
+			shape: "gear"
+			subtitle: "Unlocks: \"Farming \\& Food\""
+			description: [
+				"...is through the stomach!"
+				""
+				"Vanilla foods are good, but they can be better!"
+				"Explore the crops and foods the world has to offer, and delight in the delectable dishes at your disposal!"
+			]
+			id: "68E28B942604D492"
+			tasks: [{
+				id: "1861D68878246E36"
+				type: "advancement"
+				advancement: "minecraft:husbandry/root"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Darker Depths"
+			icon: "minecraft:fire_charge"
+			x: -4.0d
+			y: -3.0d
+			subtitle: "The next stage of the game."
+			description: [
+				"Think really hard about whether or not you want to go through that portal."
+				""
+				"Doing so will make the world irreversibly more hostile."
+				"The reward will be greater, but is it really worth the risk?"
+			]
+			dependencies: ["1F3273938B672AD7"]
+			id: "4741647F9644B768"
+			tasks: [{
+				id: "4D8EFCD5B44CFDA8"
+				type: "observation"
+				title: "Contemplate your demise..."
+				icon: "minecraft:blaze_powder"
+				timer: 100L
+				observe_type: 0
+				to_observe: "minecraft:nether_portal"
+			}]
+			rewards: [{
+				id: "12F5C56303C913D3"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						CustomPotionEffects: [{
+							Duration: 1200
+							Id: 12
+						}]
+						CustomPotionColor: 10099144
+						display: {
+							Lore: ["\"Cross your fingers you don't end up needing it...\""]
+							Name: "\"Insurance\""
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Obtain a Book of Shadows"
+			x: -5.0d
+			y: -0.5d
+			shape: "gear"
+			subtitle: "Unlocks: \"Witchy Wonders\""
+			id: "6855E8D2B04E6AC7"
+			tasks: [{
+				id: "788963A4868F3733"
+				type: "item"
+				item: {
+					id: "hexerei:book_of_shadows"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+	]
+	quest_links: [ ]
+}

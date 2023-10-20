@@ -1,0 +1,599 @@
+{
+	id: "55E9762CC161D605"
+	group: ""
+	order_index: 0
+	filename: "starter_kits"
+	title: "Starter Kits"
+	icon: "minecraft:item_frame"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [
+		{
+			x: -2.5d
+			y: 1.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "supplementaries:textures/items/crossbow_amethyst_arrow.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -1.5d
+			y: 1.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "antiqueatlas:textures/gui/icons/add_marker.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -0.5d
+			y: 1.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/mob_effect/resistance.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 1.5d
+			y: 1.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/mob_effect/strength.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 2.5d
+			y: 1.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "relics:textures/mob_effect/stun.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 0.5d
+			y: 1.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "hexerei:textures/item/belladonna_flowers.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
+	quests: [
+		{
+			icon: "minecraft:bundle"
+			x: 0.0d
+			y: -1.0d
+			subtitle: "Starter Gear for a Weary Adventurer"
+			description: [
+				"These are just some items to get your journey started."
+				""
+				"Your choice has no bearing on the course of your journey."
+				""
+				"Also, you can only pick one, so choose wisely!"
+			]
+			id: "1E79DD8A7B444B90"
+			tasks: [{
+				id: "20B7F62D63857B76"
+				type: "checkmark"
+				title: "Pick a class!"
+			}]
+		}
+		{
+			icon: {
+				id: "minecraft:iron_sword"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 1.5d
+			y: 0.5d
+			subtitle: "The best offense is a good defense!"
+			dependencies: ["1E79DD8A7B444B90"]
+			incompatible: [
+				"5D70509D8EB63BFF"
+				"71E43040EF6AFF5D"
+				"27939B9CCBE04BDA"
+				"7CF13BF0F4B336C0"
+				"13AD287D36A0E27E"
+			]
+			id: "3749FA9BD8FAAA6B"
+			tasks: [{
+				id: "45D49D46901A7F03"
+				type: "checkmark"
+				title: "Knight"
+			}]
+			rewards: [
+				{
+					id: "68B5C026F7302DBC"
+					type: "item"
+					item: {
+						id: "minecraft:iron_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "34D0F1A8B0060CD1"
+					type: "item"
+					item: {
+						id: "minecraft:chainmail_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "470C2B7372FFD6B8"
+					type: "item"
+					item: {
+						id: "minecraft:stone_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									lvl: 1s
+									id: "minecraft:sharpness"
+								}
+								{
+									lvl: 1s
+									id: "minecraft:unbreaking"
+								}
+								{
+									lvl: 1s
+									id: "minecraft:looting"
+								}
+							]
+							display: {
+								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Dulled Blade\"}"
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: "irons_spellbooks:magic_cloth"
+			x: 2.5d
+			y: 0.5d
+			subtitle: "A book, some arcane sprinkles, and voila!"
+			dependencies: ["1E79DD8A7B444B90"]
+			incompatible: [
+				"5D70509D8EB63BFF"
+				"71E43040EF6AFF5D"
+				"27939B9CCBE04BDA"
+				"3749FA9BD8FAAA6B"
+				"13AD287D36A0E27E"
+			]
+			id: "7CF13BF0F4B336C0"
+			tasks: [{
+				id: "726D9D588107C72D"
+				type: "checkmark"
+				title: "Wandering Mage"
+			}]
+			rewards: [
+				{
+					id: "2BED91471D2F7111"
+					type: "item"
+					item: {
+						id: "irons_spellbooks:wandering_magician_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "154705B6D85B2363"
+					type: "item"
+					item: {
+						id: "irons_spellbooks:copper_spell_book"
+						Count: 1b
+						tag: {
+							ISB_spellbook: {
+								spellSlots: 4
+								spells: [
+									{
+										slot: 0
+										id: 4
+										level: 1
+									}
+									{
+										slot: 1
+										id: 11
+										level: 2
+									}
+									{
+										slot: 2
+										id: 16
+										level: 1
+									}
+									{
+										slot: 3
+										id: 7
+										level: 3
+									}
+								]
+								activeSpellIndex: 0
+							}
+						}
+					}
+				}
+				{
+					id: "4AB7675810A99FEE"
+					type: "item"
+					item: "irons_spellbooks:silver_ring"
+				}
+			]
+		}
+		{
+			icon: {
+				id: "minecraft:bow"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -2.5d
+			y: 0.5d
+			subtitle: "Pew pew pew! Certain enemies are weak to arrows!"
+			dependencies: ["1E79DD8A7B444B90"]
+			incompatible: [
+				"71E43040EF6AFF5D"
+				"27939B9CCBE04BDA"
+				"3749FA9BD8FAAA6B"
+				"7CF13BF0F4B336C0"
+				"13AD287D36A0E27E"
+			]
+			id: "5D70509D8EB63BFF"
+			tasks: [{
+				id: "00A9C6445B28715C"
+				type: "checkmark"
+				title: "Archer"
+			}]
+			rewards: [
+				{
+					id: "043CD52D017C3328"
+					type: "item"
+					item: {
+						id: "minecraft:bow"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5630B6F17ED8F8F0"
+					type: "item"
+					item: {
+						id: "nock_enough_arrows:quiver"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								Size: 5
+								Items: [ ]
+							}
+						}
+					}
+				}
+				{
+					id: "3D58F43D0F5EF18A"
+					type: "item"
+					item: "minecraft:arrow"
+					count: 128
+				}
+				{
+					id: "0A8555915EE92AE2"
+					type: "item"
+					item: {
+						id: "environmental:wanderer_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4F47C260294C7A19"
+					type: "item"
+					item: {
+						id: "minecraft:leather_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5BA74418350137B7"
+					type: "item"
+					item: {
+						id: "minecraft:leather_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: "minecraft:filled_map"
+			x: -1.5d
+			y: 0.5d
+			subtitle: "If you plan to enter a dungeon, you'll want these."
+			dependencies: ["1E79DD8A7B444B90"]
+			incompatible: [
+				"5D70509D8EB63BFF"
+				"27939B9CCBE04BDA"
+				"3749FA9BD8FAAA6B"
+				"7CF13BF0F4B336C0"
+				"13AD287D36A0E27E"
+			]
+			id: "71E43040EF6AFF5D"
+			tasks: [{
+				id: "2796F9A373CAAB43"
+				type: "checkmark"
+				title: "Explorer"
+			}]
+			rewards: [
+				{
+					id: "2D36D72F081C3A48"
+					type: "item"
+					item: "minecraft:torch"
+					count: 64
+				}
+				{
+					id: "5C66D438140DA7BC"
+					type: "item"
+					item: {
+						id: "minecraft:stone_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2ED798C649C04A50"
+					type: "item"
+					item: {
+						id: "minecraft:stone_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									lvl: 1s
+									id: "minecraft:efficiency"
+								}
+								{
+									lvl: 1s
+									id: "minecraft:unbreaking"
+								}
+							]
+							display: {
+								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Worn Pickaxe\"}"
+							}
+						}
+					}
+				}
+				{
+					id: "073CBEA7B3373A26"
+					type: "item"
+					item: "minecraft:bundle"
+				}
+				{
+					id: "68882527346051CC"
+					type: "item"
+					item: {
+						id: "minecraft:leather_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "403DC339BF291CEF"
+					type: "item"
+					item: {
+						id: "minecraft:leather_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1A662B1CB6D9516D"
+					type: "item"
+					item: {
+						id: "minecraft:leather_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: {
+				id: "knight_quest:kq_veteran_set_helmet"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -0.5d
+			y: 0.5d
+			subtitle: "Mean, Lean, Damage-Soaking Machine!"
+			dependencies: ["1E79DD8A7B444B90"]
+			incompatible: [
+				"5D70509D8EB63BFF"
+				"71E43040EF6AFF5D"
+				"3749FA9BD8FAAA6B"
+				"7CF13BF0F4B336C0"
+				"13AD287D36A0E27E"
+			]
+			id: "27939B9CCBE04BDA"
+			tasks: [{
+				id: "5CE44416D65DA054"
+				type: "checkmark"
+				title: "Heavyweight"
+			}]
+			rewards: [
+				{
+					id: "0E25FCD527124F8F"
+					type: "item"
+					item: {
+						id: "knight_quest:kq_veteran_set_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "41C773BF3E898AA0"
+					type: "item"
+					item: {
+						id: "minecraft:shield"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "597E78A1D8378552"
+					type: "item"
+					item: "farmersdelight:bacon_and_eggs"
+					count: 6
+				}
+			]
+		}
+		{
+			title: "Aspiring Witch"
+			icon: {
+				id: "hexerei:witch_helmet"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 0.5d
+			y: 0.5d
+			subtitle: "An apothecary with a twist."
+			dependencies: ["1E79DD8A7B444B90"]
+			incompatible: [
+				"5D70509D8EB63BFF"
+				"71E43040EF6AFF5D"
+				"3749FA9BD8FAAA6B"
+				"7CF13BF0F4B336C0"
+				"27939B9CCBE04BDA"
+			]
+			id: "13AD287D36A0E27E"
+			tasks: [{
+				id: "1E0578174C07C7A4"
+				type: "checkmark"
+				title: "Aspiring Witch"
+			}]
+			rewards: [
+				{
+					id: "36F047693F50FA95"
+					type: "item"
+					item: "hexerei:crow_spawn_egg"
+				}
+				{
+					id: "1B146DAEAE6B1B3A"
+					type: "item"
+					item: "hexerei:seed_mixture"
+					count: 12
+					random_bonus: 16
+				}
+				{
+					id: "1B2A1964026B1098"
+					type: "item"
+					item: "hexerei:mahogany_sapling"
+				}
+				{
+					id: "7EFD88C21FF04E3D"
+					type: "item"
+					item: {
+						id: "hexerei:mushroom_witch_hat"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4056A7ACB01734FA"
+					type: "item"
+					item: {
+						id: "hexerei:witch_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "714827BD7765ACC0"
+					type: "item"
+					item: {
+						id: "farmersdelight:flint_knife"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									lvl: 1s
+									id: "minecraft:sharpness"
+								}
+								{
+									lvl: 1s
+									id: "minecraft:unbreaking"
+								}
+							]
+							display: {
+								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Rusted Knife\"}"
+							}
+						}
+					}
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+}

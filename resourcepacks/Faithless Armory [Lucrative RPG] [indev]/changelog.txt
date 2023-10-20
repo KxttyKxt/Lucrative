@@ -1,0 +1,17 @@
+0.2
+
+Added:
+- This Changelog
+
+Planned:
+- Simply Swords
+  + Diamond Tools
+  + Golden Tools
+- Reliquary
+  + Condensed Potions
+  + Splash Condensed Potions
+  + Lingering Condensed Potions
+
+0.1
+
+- Iron Tools from Simply Swords

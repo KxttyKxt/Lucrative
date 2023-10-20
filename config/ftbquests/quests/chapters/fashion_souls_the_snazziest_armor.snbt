@@ -1,0 +1,49 @@
+{
+	id: "24D31E22558F41B2"
+	group: "73229D137C63EB77"
+	order_index: 4
+	filename: "fashion_souls_the_snazziest_armor"
+	title: "Fashion Souls (The Snazziest Armor)"
+	icon: {
+		id: "knight_quest:kq_silver_set_chestplate"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	subtitle: ["Knight Quest"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		title: "Up your Arsenal!"
+		x: 0.0d
+		y: 0.0d
+		shape: "gear"
+		subtitle: "Unlocks: \"Fashion Souls\""
+		description: [
+			"The most powerful and snazzy of armors are at your disposal in Lucrative. Though the methods of obtaining these are a little unusual, they are far worth the effort."
+			""
+			"To begin, you'll need two things."
+			""
+			"The Great Chalice is obtained by smithing a cauldron with a copper block."
+			""
+			"Great Essence is usually obtained by breaking monster spawners. Beware: spawners are more dangerous than you might remember."
+		]
+		invisible: true
+		id: "2FE934D76744D1BA"
+		tasks: [
+			{
+				id: "23827ECDDD54EEE1"
+				type: "item"
+				item: "knight_quest:kq_great_essence"
+				count: 3L
+			}
+			{
+				id: "4B0309F8F28A5B24"
+				type: "item"
+				item: "knight_quest:chalice_state_0"
+			}
+		]
+	}]
+	quest_links: [ ]
+}

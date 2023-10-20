@@ -1,0 +1,31 @@
+{
+	id: "6EA5D8E0A71928E2"
+	group: "73229D137C63EB77"
+	order_index: 1
+	filename: "storage_moar_storage"
+	title: "Storage! Moar Storage!"
+	icon: "minecraft:ender_chest"
+	subtitle: ["Storage Drawers, Backpacks, and more!"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		title: "Sophisticated Storage Solutions"
+		x: 0.0d
+		y: 0.0d
+		shape: "gear"
+		subtitle: "Unlocks: \"Storage! Moar Storage!\""
+		description: [
+			"In a world with so much loot to be plundered, a bundle will only go so far. To become the loot goblin of your dreams, you'll need a backpack."
+			""
+			"Or at least, you'll need a pouch first."
+		]
+		invisible: true
+		id: "092674E4108FAB28"
+		tasks: [{
+			id: "15A2463735996D11"
+			type: "item"
+			item: "sophisticatedbackpacks:backpack"
+		}]
+	}]
+	quest_links: [ ]
+}

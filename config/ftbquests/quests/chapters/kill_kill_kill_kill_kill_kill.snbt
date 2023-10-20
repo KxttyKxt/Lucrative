@@ -1,0 +1,153 @@
+{
+	id: "683F5D7453C99FC7"
+	group: "73229D137C63EB77"
+	order_index: 0
+	filename: "kill_kill_kill_kill_kill_kill"
+	title: "Fantastic Beasts and So Much Worse"
+	icon: {
+		id: "minecraft:enchanted_book"
+		Count: 1b
+		tag: {
+			StoredEnchantments: [{
+				lvl: 1s
+				id: "minecraft:smite"
+			}]
+		}
+	}
+	subtitle: ["A bestiary of sorts"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [
+		{
+			x: -7.5d
+			y: -1.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/mob_effect/luck.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -2.5d
+			y: -1.5d
+			width: 2.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/painting/sunset.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 1.5d
+			y: -1.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "visuality:textures/particle/wither_bone.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 2.5d
+			y: -1.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "enemyexpansion:textures/items/miniwither.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -6.5d
+			y: -1.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/mob_effect/dolphins_grace.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 5.5d
+			y: -1.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/entity/enderdragon/dragon_fireball.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 6.5d
+			y: -1.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/block/dragon_egg.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
+	quests: [{
+		title: "Zombie"
+		icon: "minecraft:zombie_spawn_egg"
+		x: -2.5d
+		y: -0.5d
+		subtitle: "A simple but brutish creature."
+		description: [
+			"Zombies are the simplest enemy in Minecraft, but they are still plenty dangerous."
+			""
+			"Zombies can spawn with randomized stats as well as a select few abilities like increased speed."
+		]
+		hide_text_until_complete: true
+		invisible: true
+		invisible_until_tasks: 1
+		id: "593365683A3C6881"
+		tasks: [
+			{
+				id: "5FC736571B899BBB"
+				type: "observation"
+				title: "Observe a Zombie"
+				icon: "minecraft:spyglass"
+				timer: 100L
+				observe_type: 5
+				to_observe: "minecraft:zombie"
+			}
+			{
+				id: "60C2EAEF17CAC380"
+				type: "kill"
+				icon: {
+					id: "minecraft:iron_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				entity: "minecraft:zombie"
+				value: 1L
+			}
+		]
+		rewards: [{
+			id: "5C31B18FC51068E6"
+			type: "xp"
+			icon: "minecraft:experience_bottle"
+			xp: 20
+		}]
+	}]
+	quest_links: [ ]
+}

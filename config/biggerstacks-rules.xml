@@ -1,0 +1,65 @@
+<!-- ruleset (ignore) -->
+<ruleset version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://codeberg.org/PORTB/BiggerStacksConfigLib/raw/branch/master/extra/schema.xsd">
+    <!-- potions -->
+    <rule stacksize="8">
+        <or>
+			<!-- vanilla potions -->
+            <condition>id minecraft:potion</condition>
+            <condition>id minecraft:lingering_potion</condition>
+            <condition>id minecraft:splash_potion</condition>
+			<!-- reliquary potions -->
+			<condition>id reliquary:potion</condition>
+			<condition>id reliquary:splash_potion</condition>
+			<condition>id reliquary:lingering_potion</condition>
+        </or>
+    </rule>
+	<!-- ender pearls & ender eyes -->
+	<rule stacksize="64">
+		<or>
+			<!-- vanilla -->
+			<condition>id minecraft:ender_pearl</condition>
+			<condition>id minecraft:ender_eye</condition>
+			<!-- end remastered -->
+			<condition>id endrem:rogue_eye</condition>
+			<condition>id endrem:old_eye</condition>
+			<condition>id endrem:nether_eye</condition>
+			<condition>id endrem:black_eye</condition>
+			<condition>id endrem:corrupted_eye</condition>
+			<condition>id endrem:lost_eye</condition>
+			<condition>id endrem:evil_eye</condition>
+			<condition>id endrem:guardian_eye</condition>
+			<condition>id endrem:magical_eye</condition>
+			<condition>id endrem:wither_eye</condition>
+			<condition>id endrem:witch_eye</condition>
+			<condition>id endrem:undead_eye</condition>
+			<condition>id endrem:cursed_eye</condition>
+			<condition>id endrem:exotic_eye</condition>
+		</or>
+	</rule>
+    <!-- enchanted books -->
+    <rule stacksize="16">
+		<or>
+			<condition>id minecraft:enchanted_book</condition>
+			<condition>id quark:ancient_tome</condition>
+		</or>
+    </rule>
+	<!-- commmon loot -->
+	<rule stacksize="256"> <!-- subject to change -->
+		<or>
+			<condition>id minecraft:rotten_flesh</condition>
+			<condition>id minecraft:bone</condition>
+			<condition>id minecraft:string</condition>
+			<condition>id minecraft:slime_ball</condition>
+			<condition>id minecraft:gunpowder</condition>
+			<condition>id minecraft:spider_eye</condition>
+		</or>
+	</rule>
+	<!-- torches & misc -->
+	<rule stacksize="128">
+		<or>
+			<condition>id minecraft:torch</condition>
+			<condition>id knight_quest:kq_great_essence</condition>
+			<condition>id titles:title_fragment</condition>
+		</or>
+	</rule>
+</ruleset>

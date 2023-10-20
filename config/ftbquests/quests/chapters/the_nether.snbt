@@ -1,0 +1,55 @@
+{
+	id: "029CFE6F26E73398"
+	group: "41A9DF4B3815A94D"
+	order_index: 1
+	filename: "the_nether"
+	title: "The Nether"
+	icon: "minecraft:blaze_powder"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Enter the Nether"
+			icon: "minecraft:blaze_powder"
+			x: -2.0d
+			y: 0.0d
+			invisible: true
+			id: "1935BAEE0E44C1D9"
+			tasks: [{
+				id: "738D0CDBFE52656C"
+				type: "advancement"
+				advancement: "minecraft:story/enter_the_nether"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Expert Mode"
+			icon: "minecraft:wither_skeleton_skull"
+			x: -1.0d
+			y: 0.0d
+			shape: "hexagon"
+			subtitle: "Turning up the heat..."
+			dependencies: ["3672A028FF06A531"]
+			invisible: true
+			id: "158760A10B6CC93A"
+			tasks: [
+				{
+					id: "545103F2C85E55C9"
+					type: "dimension"
+					title: "Enter the Nether"
+					icon: "minecraft:blaze_spawn_egg"
+					dimension: "minecraft:the_nether"
+				}
+				{
+					id: "4BB840B0464591FE"
+					type: "advancement"
+					title: "Expert Mode"
+					secret: true
+					advancement: "majruszsdifficulty:progressive_difficulty/expert_mode"
+					criterion: ""
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+}

@@ -1,0 +1,78 @@
+{
+	id: "7286B045F9443398"
+	group: "41A9DF4B3815A94D"
+	order_index: 2
+	filename: "the_end"
+	title: "The End"
+	icon: {
+		id: "gateways:gate_pearl"
+		Count: 1b
+		tag: {
+			gateway: "gateways:enderman_gate"
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: {
+				id: "gateways:gate_pearl"
+				Count: 1b
+				tag: {
+					gateway: "gateways:enderman_gate"
+				}
+			}
+			x: 0.0d
+			y: 0.0d
+			invisible: true
+			id: "73AFC7B9C1ECF27C"
+			tasks: [{
+				id: "1999A3E9E09AFB12"
+				type: "advancement"
+				title: "Enter the End"
+				icon: "minecraft:end_portal_frame"
+				advancement: "minecraft:end/root"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Master Mode"
+			icon: "minecraft:dragon_head"
+			x: 1.0d
+			y: 0.0d
+			shape: "octagon"
+			subtitle: "The real challenge."
+			dependencies: ["40D2F2C55DABC992"]
+			invisible: true
+			min_required_tasks: 1
+			id: "4A56F2DBCEBC8A18"
+			tasks: [
+				{
+					id: "4815E296A24EAC2F"
+					type: "advancement"
+					title: "Kill the Enderdragon"
+					icon: "minecraft:dragon_breath"
+					advancement: "minecraft:end/kill_dragon"
+					criterion: ""
+				}
+				{
+					id: "63FD418BD27D204E"
+					type: "advancement"
+					title: "...or go through a gateway."
+					secret: true
+					advancement: "minecraft:end/enter_end_gateway"
+					criterion: ""
+				}
+				{
+					id: "1B8682E9E672A448"
+					type: "advancement"
+					title: "Master Mode"
+					secret: true
+					advancement: "majruszsdifficulty:progressive_difficulty/master_mode"
+					criterion: ""
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+}

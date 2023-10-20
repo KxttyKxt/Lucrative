@@ -1,0 +1,991 @@
+{
+	id: "3D00A830CFABFB71"
+	group: "73229D137C63EB77"
+	order_index: 3
+	filename: "armory_unleashed"
+	title: "Armory Unleashed"
+	icon: {
+		id: "simplyswords:emberblade"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	subtitle: ["Simply Swords, Shield Expansion"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Longsword"
+			x: -5.5d
+			y: -3.5d
+			shape: "rsquare"
+			subtitle: "A knight's best friend"
+			description: [
+				"With the same attack speed and damage as a regular sword, the longsword has a slightly longer range, making it a superior--but still very orthodox--weapon."
+				""
+				"Dual-wielding longswords provides no extra benefit."
+			]
+			dependencies: ["22F2D81DBFBB9877"]
+			dependency_requirement: "one_completed"
+			optional: true
+			invisible: true
+			min_required_tasks: 1
+			id: "3BC54BA1AD4C6A70"
+			tasks: [
+				{
+					id: "5BA85EE655EAEC8C"
+					type: "item"
+					item: {
+						id: "simplyswords:diamond_longsword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "33C160D08322B37F"
+					type: "item"
+					item: {
+						id: "simplyswords:iron_longsword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1B750B86FA39F8DB"
+					type: "item"
+					item: {
+						id: "simplyswords:gold_longsword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "668B8A89FB491BDA"
+					type: "item"
+					item: {
+						id: "simplyswords:netherite_longsword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "53BA55A9691D475C"
+					type: "item"
+					item: {
+						id: "simplyswords:runic_longsword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Twinblade"
+			x: -5.0d
+			y: -0.5d
+			description: [
+				"With high speed and decent range, the twinblade's combo starts out weak, but strengthens as it progresses."
+				""
+				"As a two-handed weapon, the twinblade cannot be dual-wielded. Offhand items become disabled."
+			]
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			min_required_tasks: 1
+			id: "1152E5F87FD2459D"
+			tasks: [
+				{
+					id: "3861F0B9F99FDBC9"
+					type: "item"
+					item: {
+						id: "simplyswords:diamond_twinblade"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "45F7BF87C9B4005A"
+					type: "item"
+					item: {
+						id: "simplyswords:iron_twinblade"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "307C7DA1EBE0204B"
+					type: "item"
+					item: {
+						id: "simplyswords:gold_twinblade"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "28B6DA8EC8463204"
+					type: "item"
+					item: {
+						id: "simplyswords:netherite_twinblade"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "42113FACEDA7A98A"
+					type: "item"
+					item: {
+						id: "simplyswords:runic_twinblade"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: -3.5d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "244179171EB55B8F"
+			tasks: [{
+				id: "067FEC08CB4F5691"
+				type: "item"
+				item: {
+					id: "simplyswords:diamond_rapier"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -4.0d
+			y: -0.5d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "01E8996D01783ABC"
+			tasks: [{
+				id: "0E4F70DBFAE9F95A"
+				type: "item"
+				item: {
+					id: "simplyswords:diamond_katana"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "44CDB01682198A26"
+			tasks: [{
+				id: "30E83DEE3E3D89AD"
+				type: "item"
+				item: {
+					id: "simplyswords:diamond_sai"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -3.5d
+			y: -3.5d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "0F2DA99EC6C030EA"
+			tasks: [{
+				id: "76930EF87828EC73"
+				type: "item"
+				item: {
+					id: "simplyswords:diamond_spear"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: -0.5d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "59508B2A6C4A123E"
+			tasks: [{
+				id: "489861157BD387D6"
+				type: "item"
+				item: {
+					id: "simplyswords:diamond_glaive"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -5.0d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "1128A9D10AE1F8BA"
+			tasks: [{
+				id: "05FF644D59601B0B"
+				type: "item"
+				item: {
+					id: "simplyswords:diamond_warglaive"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -4.0d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "7632403ACAACE1E0"
+			tasks: [{
+				id: "04A29061D1D50CEA"
+				type: "item"
+				item: {
+					id: "simplyswords:diamond_cutlass"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Claymore"
+			x: -6.0d
+			y: -0.5d
+			subtitle: "Snake's Favorite"
+			description: [
+				"The claymore is a powerful two-handed weapon with decent range. Each successive hit in the combo does more damage, ending with a zealous cleave."
+				""
+				"As a two-handed weapon, the claymore cannot be dual-wielded. Offhand items become disabled."
+			]
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			dependency_requirement: "one_completed"
+			min_required_tasks: 1
+			id: "41D2B1B305E48A26"
+			tasks: [
+				{
+					id: "1D5C9184D608D8FA"
+					type: "item"
+					item: {
+						id: "simplyswords:diamond_claymore"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "09820A05B855FBB2"
+					type: "item"
+					item: {
+						id: "simplyswords:iron_claymore"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2D9F54235F5893D8"
+					type: "item"
+					item: {
+						id: "simplyswords:gold_claymore"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "48970C61D728AC5C"
+					type: "item"
+					item: {
+						id: "simplyswords:netherite_claymore"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6A112DA1CE87A11D"
+					type: "item"
+					item: {
+						id: "simplyswords:runic_claymore"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -5.5d
+			y: 0.5d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "6691C4B738117E93"
+			tasks: [{
+				id: "76ABFC0004E58502"
+				type: "item"
+				item: {
+					id: "simplyswords:diamond_greathammer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -4.5d
+			y: 0.5d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "22123CB6F01C4E95"
+			tasks: [{
+				id: "38073D4039430408"
+				type: "item"
+				item: {
+					id: "simplyswords:diamond_greataxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -6.0d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			min_required_tasks: 1
+			id: "6621D81CCBEBBEF3"
+			tasks: [{
+				id: "663F5426B4A5EC09"
+				type: "item"
+				item: {
+					id: "simplyswords:diamond_chakram"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -3.5d
+			y: 0.5d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "3E239B7344B6F252"
+			tasks: [{
+				id: "773E513BE940E98A"
+				type: "item"
+				item: {
+					id: "simplyswords:diamond_scythe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -2.5d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "103887515D3E66A6"
+			tasks: [{
+				id: "08357417A8049571"
+				type: "item"
+				item: {
+					id: "shieldexp:iron_shield"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.5d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "276AB4F149B4AFC9"
+			tasks: [{
+				id: "5C5101771C33CC3B"
+				type: "item"
+				item: {
+					id: "shieldexp:golden_shield"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -0.5d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "56EE8AEF58EAF6C1"
+			tasks: [{
+				id: "0926E03CADB86AED"
+				type: "item"
+				item: {
+					id: "shieldexp:diamond_shield"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: 0.5d
+			dependencies: ["56EE8AEF58EAF6C1"]
+			id: "37CA5805234ECDD7"
+			tasks: [{
+				id: "791965F42B41CDA1"
+				type: "item"
+				item: {
+					id: "shieldexp:netherite_shield"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -3.5d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "0145EA7DA217E4B1"
+			tasks: [{
+				id: "4565C9888DADA75B"
+				type: "item"
+				item: {
+					id: "minecraft:shield"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: -3.5d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "4AB7B71E463DD078"
+			tasks: [{
+				id: "1A1F119EA794DD81"
+				type: "item"
+				item: {
+					id: "simplyswords:brimstone_claymore"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.5d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "04ADFFA54307DD05"
+			tasks: [{
+				id: "4AF5B38F8D2B9D86"
+				type: "item"
+				item: {
+					id: "simplyswords:watcher_claymore"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.5d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "0123368C2CBD166B"
+			tasks: [{
+				id: "646D343ACBAFDB24"
+				type: "item"
+				item: {
+					id: "simplyswords:storms_edge"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.5d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "4A5C3FC4C3481683"
+			tasks: [{
+				id: "1D5F919C893F1652"
+				type: "item"
+				item: {
+					id: "simplyswords:stormbringer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.5d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "573D833B5B53BCB5"
+			tasks: [{
+				id: "5D5D33669337E44B"
+				type: "item"
+				item: {
+					id: "simplyswords:sword_on_a_stick"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: -0.5d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "15AD34E1715DB65D"
+			tasks: [{
+				id: "2B293505448C27AB"
+				type: "item"
+				item: {
+					id: "simplyswords:bramblethorn"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: -0.5d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "3A6446554F829FE0"
+			tasks: [{
+				id: "7EA0D5BA421B3494"
+				type: "item"
+				item: {
+					id: "simplyswords:watching_warglaive"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: -2.5d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "6D5FF511C874B1B2"
+			tasks: [{
+				id: "522A377CA04B2A5B"
+				type: "item"
+				item: {
+					id: "simplyswords:toxic_longsword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: -3.5d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "157E3D392DEA7991"
+			tasks: [{
+				id: "560BBF5FC4B78A95"
+				type: "item"
+				item: {
+					id: "simplyswords:emberblade"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: -3.5d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "60F90A1341795F0B"
+			tasks: [{
+				id: "1C282BF6A41025E0"
+				type: "item"
+				item: {
+					id: "simplyswords:hearthflame"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: -2.5d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "6BF3173CD4D4D794"
+			tasks: [{
+				id: "4B6C3D6DDDCCB37F"
+				type: "item"
+				item: {
+					id: "simplyswords:soulkeeper"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.5d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "5DCAC8B4B042B7E1"
+			tasks: [{
+				id: "5BC796C1B5F3D999"
+				type: "item"
+				item: {
+					id: "simplyswords:twisted_blade"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.5d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "3D3B818578EE94D2"
+			tasks: [{
+				id: "45BCB9E41FA7C26A"
+				type: "item"
+				item: {
+					id: "simplyswords:soulstealer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.5d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "78E118697C334A14"
+			tasks: [{
+				id: "7B57D3C3CB64C415"
+				type: "item"
+				item: {
+					id: "simplyswords:soulrender"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: -2.5d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "25539F0F90A7D081"
+			tasks: [{
+				id: "0285530C6D8E5003"
+				type: "item"
+				item: {
+					id: "simplyswords:soulpyre"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: -1.5d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "43315543B589268D"
+			tasks: [{
+				id: "68445CB9DD77128E"
+				type: "item"
+				item: {
+					id: "simplyswords:frostfall"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: -3.5d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "288FC28BCFA98BB4"
+			tasks: [{
+				id: "3B29E6CA36F0F093"
+				type: "item"
+				item: {
+					id: "simplyswords:molten_edge"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: 1.5d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "2C19A2D40EC2B138"
+			tasks: [{
+				id: "162A01C4340CCB7C"
+				type: "item"
+				item: {
+					id: "simplyswords:livyatan"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: -1.5d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "2DA2BAEBB15D57B2"
+			tasks: [{
+				id: "544F83B1052BDB6D"
+				type: "item"
+				item: {
+					id: "simplyswords:icewhisper"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: -0.5d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "42C5ACF5EE3EA58B"
+			tasks: [{
+				id: "553D06DEEC5CAD74"
+				type: "item"
+				item: {
+					id: "simplyswords:arcanethyst"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.5d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "3A0B092998DB5978"
+			tasks: [{
+				id: "287C22A75ACF0DF0"
+				type: "item"
+				item: {
+					id: "simplyswords:thunderbrand"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: -0.5d
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "53398601EEFCC4FD"
+			tasks: [{
+				id: "488E52C82CEED0D7"
+				type: "item"
+				item: {
+					id: "simplyswords:mjolnir"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 5.5d
+			y: -3.5d
+			shape: "pentagon"
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "201D2DCC74B7688B"
+			tasks: [{
+				id: "0E58854ABFAF4A55"
+				type: "item"
+				item: {
+					id: "simplyswords:slumbering_lichblade"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 5.5d
+			y: -2.5d
+			shape: "hexagon"
+			dependencies: ["201D2DCC74B7688B"]
+			id: "247DF2F31525BA0D"
+			tasks: [{
+				id: "02B29353964B9736"
+				type: "item"
+				item: {
+					id: "simplyswords:waking_lichblade"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 5.5d
+			y: -1.5d
+			shape: "octagon"
+			dependencies: ["247DF2F31525BA0D"]
+			id: "7253402B93787274"
+			tasks: [{
+				id: "3FD2B36B5D373EB3"
+				type: "item"
+				item: {
+					id: "simplyswords:awakened_lichblade"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 5.5d
+			y: 0.0d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["3BC54BA1AD4C6A70"]
+			id: "466BD79EB240235C"
+			tasks: [{
+				id: "01003A3F70791C7E"
+				type: "item"
+				item: "simplyswords:runic_tablet"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

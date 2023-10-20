@@ -1,0 +1,63 @@
+{
+	id: "20A71B361F4AFC89"
+	group: "73229D137C63EB77"
+	order_index: 6
+	filename: "witchy_wonders"
+	title: "Witchy Wonders"
+	icon: {
+		id: "hexerei:willow_broom"
+		Count: 1b
+		tag: {
+			floatMode: 0b
+			Inventory: {
+				Size: 30
+				Items: [
+					{
+						Slot: 0
+						id: "hexerei:broom_keychain"
+						Count: 1b
+						tag: {
+							Items: [{
+								Slot: 0b
+								id: "hexerei:herb_drying_rack_full"
+								Count: 1b
+							}]
+						}
+					}
+					{
+						Slot: 2
+						id: "hexerei:herb_enhanced_broom_brush"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				]
+			}
+			display: {
+				Name: "{\"translate\":\"item.hexerei.willow_broom\"}"
+			}
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		title: "Obtain a Book of Shadows"
+		x: 0.0d
+		y: 0.0d
+		shape: "gear"
+		subtitle: "Unlocks: \"Witchy Wonders\""
+		invisible: true
+		id: "1569E4BF824510F3"
+		tasks: [{
+			id: "08FC4598EA983223"
+			type: "item"
+			item: {
+				id: "hexerei:book_of_shadows"
+				Count: 1b
+				tag: { }
+			}
+		}]
+	}]
+	quest_links: [ ]
+}

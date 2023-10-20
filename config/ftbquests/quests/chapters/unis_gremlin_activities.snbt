@@ -1,0 +1,209 @@
+{
+	id: "6CFE4F93C1A274B7"
+	group: "4DB7D1605B05DB1A"
+	order_index: 0
+	filename: "unis_gremlin_activities"
+	title: "Uni's Gremlin Activities"
+	icon: {
+		id: "minecraft:player_head"
+		Count: 1b
+		tag: {
+			SkullOwner: {
+				Id: [I;
+					-1503345796
+					-573747330
+					-1792026459
+					-1673442523
+				]
+				Properties: {
+					textures: [{
+						Value: "ewogICJ0aW1lc3RhbXAiIDogMTY5NTUyNTAwMDI4MywKICAicHJvZmlsZUlkIiA6ICJhNjY0YzM3Y2RkY2Q0ZjdlOTUyZmQ4YTU5YzQxNGIyNSIsCiAgInByb2ZpbGVOYW1lIiA6ICJVbml0aWxsYSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9iOTQ4ODZlZGQyOTU4MmFlNTg2YjYxZTY5MWU2ZjljNDAwODczOTc5YzM3YmE4YzMyNTk5NzUzN2Q5MTI2MWE3IiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0="
+						Signature: "Y9mNZWPFSQFUR2XGnNjaBVMKkMVbz+JR0BnnAgRaKktZEkozkYL0oeSpWNP3r6VdfoJyR8zxn5MN9WCrs0RNgTo9+aP0Whr4N49wr1LdDkRQhF0tKx9na+s98ZtblkMGo4J64N/+LZkGke6SiCyMrftNqax+Ph0qngmGXC3SdSMnKtvLmdsv1IVyDFrrbyFpko8Tom+nviXmuS5s6Jg2zWbSZTJQEVgxG9trWUsXP/EBPCbBgs6kE4H8U2r5Cg1kGvKLsqEUwBIASv4etzl+TtZBT5eArv8IFdLYJ+X/RWeIeuNca6yNROQmeXnmyBrgKugywoA0qjlq1EZNUCaK4YlXqal2EqO7r88KbCqLYLDXWUSHWQToV4p6mRqG07jQ1grP3t2LtzOmg8N1Nks5ovQoRVBhcVy5drCdNqk0tqSJbApxsAzuk6c6KAzKy+05aPJqURFLOz/0na4WtKrAdiOWQuJXDY836jlm4LzAwq1eXFdqrLLndxSM+P7TJ6bs951QuvgBrrGOvx3bKeCycYsleCMqjOawk2mmOCdseVn8ZAIsDdVgUL24v3rqhYATdGiK1Cb/q1MS6o0kOTxqPP++mjK+3mOcSr8ky32Gie6brVMoIKacs1fkDpzVeeRlKeBIrme64sTvH+rd6wsA9CuQDyPR3l9N8Bo3zpj69l8="
+					}]
+				}
+				Name: "Unitilla"
+			}
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Place a Sea Pickle in Neakki's House"
+			x: 0.0d
+			y: 0.0d
+			id: "7EFCF5786673CF10"
+			tasks: [{
+				id: "6490F33E9B7E6C85"
+				type: "questsadditions:place"
+				title: "Place a Sea Pickle"
+				icon: "minecraft:sea_pickle"
+				block_type: 0
+				block: "minecraft:sea_pickle"
+				value: 1L
+				replaced: "minecraft:air"
+				replace: false
+			}]
+			rewards: [{
+				id: "450027ED572422A0"
+				type: "item"
+				item: "minecraft:suspicious_stew"
+			}]
+		}
+		{
+			icon: "minecraft:bone_meal"
+			x: 0.0d
+			y: 1.0d
+			min_required_tasks: 1
+			id: "7F62EEDB3390F9BC"
+			tasks: [
+				{
+					id: "2171EA7A6A24AFF8"
+					type: "questsadditions:killnbt"
+					title: "Kill another player with a knife"
+					icon: "druidcraftrg:knife"
+					entity: "minecraft:player"
+					value: 1L
+					nbt: { }
+					checkItem: true
+					item: "druidcraftrg:knife"
+				}
+				{
+					id: "20DC3CC56A95248C"
+					type: "questsadditions:killnbt"
+					title: "or a flint knife"
+					icon: {
+						id: "farmersdelight:flint_knife"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					secret: true
+					entity: "minecraft:player"
+					value: 1L
+					nbt: { }
+					checkItem: true
+					item: {
+						id: "farmersdelight:flint_knife"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6CEF4B6F89980E8C"
+					type: "questsadditions:killnbt"
+					title: "or an iron knife"
+					icon: {
+						id: "farmersdelight:iron_knife"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					secret: true
+					entity: "minecraft:player"
+					value: 1L
+					nbt: { }
+					checkItem: true
+					item: {
+						id: "farmersdelight:iron_knife"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "10F2F281A8366926"
+					type: "questsadditions:killnbt"
+					title: "or a golden knife"
+					icon: {
+						id: "farmersdelight:golden_knife"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					secret: true
+					entity: "minecraft:player"
+					value: 1L
+					nbt: { }
+					checkItem: true
+					item: {
+						id: "farmersdelight:golden_knife"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "01BD7057E7CDB67B"
+					type: "questsadditions:killnbt"
+					title: "or a diamond knife"
+					icon: {
+						id: "farmersdelight:diamond_knife"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					secret: true
+					entity: "minecraft:player"
+					value: 1L
+					nbt: { }
+					checkItem: true
+					item: {
+						id: "farmersdelight:diamond_knife"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3EC31D4BF00F54DD"
+					type: "questsadditions:killnbt"
+					title: "or a netherite knife"
+					icon: {
+						id: "farmersdelight:netherite_knife"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					secret: true
+					entity: "minecraft:player"
+					value: 1L
+					nbt: { }
+					checkItem: true
+					item: {
+						id: "farmersdelight:netherite_knife"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "61A7A5D7F0B84CB8"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							id: "farmersdelight:backstabbing"
+							lvl: 3s
+						}]
+					}
+				}
+			}]
+		}
+	]
+	quest_links: [ ]
+}

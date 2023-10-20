@@ -1,0 +1,51 @@
+{
+	id: "6EFDF21887F2D84E"
+	group: "73229D137C63EB77"
+	order_index: 2
+	filename: "culinary_cuisine_farmers_delight__addons"
+	title: "Farming \\& Food"
+	icon: "qualitycrops:baked_potato_diamond"
+	subtitle: ["Culinary Cuisine: Farmer's Delight \\& Addons"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -1.5d
+			y: 0.0d
+			dependencies: ["22F813790D69996F"]
+			id: "098998FC5F3441F8"
+			tasks: [{
+				id: "309CF8C8B22B227E"
+				type: "advancement"
+				advancement: "farmersdelight:main/get_fd_seed"
+				criterion: ""
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			dependencies: ["22F813790D69996F"]
+			id: "53A9C98BFA34DFEF"
+			tasks: [{
+				id: "78DC7E4AB49EDC02"
+				type: "advancement"
+				advancement: "farmersdelight:main/place_campfire"
+				criterion: ""
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			shape: "rsquare"
+			invisible: true
+			id: "22F813790D69996F"
+			tasks: [{
+				id: "635EA3C5E4E8B555"
+				type: "advancement"
+				advancement: "minecraft:husbandry/root"
+				criterion: ""
+			}]
+		}
+	]
+	quest_links: [ ]
+}
