@@ -5,6 +5,8 @@ GitHub Repo for my [CurseForge modpack](https://www.curseforge.com/minecraft/mod
 
 Commits pushed to `main` should also be logged in the [changelog document](https://docs.google.com/document/d/1hfyX-cWdZkWtWKBZpo2ZQqECP3kd-3kbRFM_24hmZBo/edit?usp=sharing).
 
+Not to be confused with the [Lucrative Custom Content Mod](https://github.com/C-Stew/lucrative-mod), a java binary used for core content in this modpack.
+
 ---
 ## Cloning the Repository
 This repository reflects files I edit directly within the CurseForge modpack instance. As such, I recommend cloning it to the default location of your CurseForge modpacks.
