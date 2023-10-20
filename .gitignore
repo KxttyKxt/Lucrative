@@ -1,3 +1,8 @@
+# I don't have the licensing to have this publicly lol
+
+/resourcepacks/Faithless Armory [Lucrative RPG] [indev]
+
+
 # not needed for repo/exports
 
 /.mixin.out/
@@ -26,9 +31,3 @@ knownkeys.txt
 options.txt
 WailaErrorOutput.txt
 reauth.toml
-
-
-# I don't have the licensing to have this publicly lol
-
-/resourcepacks/Faithless Armory [Lucrative RPG] [indev]
-config/modernstartupqol/startup_times.json
