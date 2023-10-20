@@ -102,8 +102,9 @@
 			}]
 		}
 		{
+			title: "Gilded Knight"
 			icon: {
-				id: "minecraft:iron_sword"
+				id: "minecraft:golden_sword"
 				Count: 1b
 				tag: {
 					Damage: 0
@@ -112,6 +113,7 @@
 			x: 1.5d
 			y: 0.5d
 			subtitle: "The best offense is a good defense!"
+			description: ["Obsessed with all things shiny, this knight seeks glory and fortune above all things. Her sword has seen better days, but its formidable magic properties should still serve her well."]
 			dependencies: ["1E79DD8A7B444B90"]
 			incompatible: [
 				"5D70509D8EB63BFF"
@@ -122,68 +124,101 @@
 			]
 			id: "3749FA9BD8FAAA6B"
 			tasks: [{
-				id: "45D49D46901A7F03"
+				id: "346EAC331A2CE543"
 				type: "checkmark"
-				title: "Knight"
+				title: "Click here to claim!"
 			}]
 			rewards: [
 				{
-					id: "68B5C026F7302DBC"
+					id: "40D9DE40B1997525"
 					type: "item"
 					item: {
-						id: "minecraft:iron_helmet"
+						id: "minecraft:golden_sword"
 						Count: 1b
 						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "34D0F1A8B0060CD1"
-					type: "item"
-					item: {
-						id: "minecraft:chainmail_chestplate"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "470C2B7372FFD6B8"
-					type: "item"
-					item: {
-						id: "minecraft:stone_sword"
-						Count: 1b
-						tag: {
-							Damage: 0
+							Damage: 5
 							Enchantments: [
 								{
-									lvl: 1s
-									id: "minecraft:sharpness"
+									lvl: 1
+									id: "looting"
+								}
+								{
+									lvl: 1
+									id: "smite"
+								}
+								{
+									lvl: 2
+									id: "unbreaking"
 								}
 								{
 									lvl: 1s
-									id: "minecraft:unbreaking"
-								}
-								{
-									lvl: 1s
-									id: "minecraft:looting"
+									id: "majruszenchantments:incompatiblility_curse"
 								}
 							]
 							display: {
-								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Dulled Blade\"}"
+								Lore: ["[{\"text\":\"A knight's best friend.\",\"italic\":false}]"]
+								Name: "[{\"text\":\"Gilded Blade\",\"italic\":false}]"
 							}
+						}
+					}
+				}
+				{
+					id: "7565D6EB5D19D195"
+					type: "item"
+					item: {
+						id: "knight_quest:kq_iron_set_5_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "01A9654C1EF84517"
+					type: "item"
+					item: {
+						id: "minecraft:golden_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "444255E6D0F718C0"
+					type: "item"
+					item: {
+						id: "minecraft:golden_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6A48D1D04A262DA6"
+					type: "item"
+					item: {
+						id: "shieldexp:golden_shield"
+						Count: 1b
+						tag: {
+							Damage: 0
 						}
 					}
 				}
 			]
 		}
 		{
+			title: "Wandering Mage"
 			icon: "irons_spellbooks:magic_cloth"
 			x: 2.5d
 			y: 0.5d
 			subtitle: "A book, some arcane sprinkles, and voila!"
+			description: [
+				"Though she only recently discovered her capacity for magic, the wandering mage is very keen on discovering the arcane secrets of the world."
+				""
+				"What miracles (or terrors) will she find...?"
+			]
 			dependencies: ["1E79DD8A7B444B90"]
 			incompatible: [
 				"5D70509D8EB63BFF"
@@ -194,9 +229,9 @@
 			]
 			id: "7CF13BF0F4B336C0"
 			tasks: [{
-				id: "726D9D588107C72D"
+				id: "22F119E0B0E4D0F9"
 				type: "checkmark"
-				title: "Wandering Mage"
+				title: "Click here to claim!"
 			}]
 			rewards: [
 				{
@@ -254,6 +289,7 @@
 			]
 		}
 		{
+			title: "Archer"
 			icon: {
 				id: "minecraft:bow"
 				Count: 1b
@@ -264,6 +300,7 @@
 			x: -2.5d
 			y: 0.5d
 			subtitle: "Pew pew pew! Certain enemies are weak to arrows!"
+			description: ["Light of foot and swift of hand, the archer is a vital companion. Taking down foes at range has never been more essential to survival, especially depending upon what enemies you face..."]
 			dependencies: ["1E79DD8A7B444B90"]
 			incompatible: [
 				"71E43040EF6AFF5D"
@@ -274,9 +311,9 @@
 			]
 			id: "5D70509D8EB63BFF"
 			tasks: [{
-				id: "00A9C6445B28715C"
+				id: "3B73E4EF3A8520FE"
 				type: "checkmark"
-				title: "Archer"
+				title: "Click here to claim!"
 			}]
 			rewards: [
 				{
@@ -287,20 +324,6 @@
 						Count: 1b
 						tag: {
 							Damage: 0
-						}
-					}
-				}
-				{
-					id: "5630B6F17ED8F8F0"
-					type: "item"
-					item: {
-						id: "nock_enough_arrows:quiver"
-						Count: 1b
-						ForgeCaps: {
-							Parent: {
-								Size: 5
-								Items: [ ]
-							}
 						}
 					}
 				}
@@ -343,13 +366,34 @@
 						}
 					}
 				}
+				{
+					id: "7E17C06E0D5024F4"
+					type: "item"
+					item: {
+						id: "supplementaries:quiver"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								Size: 6
+								Items: [ ]
+								SelectedSlot: 0
+							}
+						}
+					}
+				}
 			]
 		}
 		{
+			title: "Explorer"
 			icon: "minecraft:filled_map"
 			x: -1.5d
 			y: 0.5d
 			subtitle: "If you plan to enter a dungeon, you'll want these."
+			description: [
+				"Dungeons are dark and dangerous places. Some adventurers never return, and others return with their pockets a little too full, having to turn back early or leave valueables behind."
+				""
+				"Not you, though. You brought an extra pocket."
+			]
 			dependencies: ["1E79DD8A7B444B90"]
 			incompatible: [
 				"5D70509D8EB63BFF"
@@ -360,9 +404,9 @@
 			]
 			id: "71E43040EF6AFF5D"
 			tasks: [{
-				id: "2796F9A373CAAB43"
+				id: "3044E1828C3372EC"
 				type: "checkmark"
-				title: "Explorer"
+				title: "Click here to claim!"
 			}]
 			rewards: [
 				{
@@ -447,6 +491,7 @@
 			]
 		}
 		{
+			title: "Heavyweight"
 			icon: {
 				id: "knight_quest:kq_veteran_set_helmet"
 				Count: 1b
@@ -457,6 +502,11 @@
 			x: -0.5d
 			y: 0.5d
 			subtitle: "Mean, Lean, Damage-Soaking Machine!"
+			description: [
+				"With a tendency to stay put when enduring even the heaviest of blows, these armored zealots are not to be taken *lightly* (get it?)"
+				""
+				"However, just as important as mitigating damage taken is healing it. That's why the heavyweight brought her favorite snack."
+			]
 			dependencies: ["1E79DD8A7B444B90"]
 			incompatible: [
 				"5D70509D8EB63BFF"
@@ -469,20 +519,9 @@
 			tasks: [{
 				id: "5CE44416D65DA054"
 				type: "checkmark"
-				title: "Heavyweight"
+				title: "Click here to claim!"
 			}]
 			rewards: [
-				{
-					id: "0E25FCD527124F8F"
-					type: "item"
-					item: {
-						id: "knight_quest:kq_veteran_set_leggings"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
 				{
 					id: "41C773BF3E898AA0"
 					type: "item"
@@ -500,6 +539,28 @@
 					item: "farmersdelight:bacon_and_eggs"
 					count: 6
 				}
+				{
+					id: "3648F92A5209A91E"
+					type: "item"
+					item: {
+						id: "enemyexpansion:bull_skull_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6164C8E2EAB236A5"
+					type: "item"
+					item: {
+						id: "knight_quest:kq_iron_set_3_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
 			]
 		}
 		{
@@ -514,6 +575,11 @@
 			x: 0.5d
 			y: 0.5d
 			subtitle: "An apothecary with a twist."
+			description: [
+				"With her first familiar by her side, she's ready for anything. Especially since her familiar in particular can do all kinds of things, including wielding weapons."
+				""
+				"(Spawn the crow and drop seed mixture in front of it to tame it. Once tamed, you can open its inventory and have it put a weapon in its mouth. If you put seed mixture there instead, it will eat it automatically to heal any damage taken.)"
+			]
 			dependencies: ["1E79DD8A7B444B90"]
 			incompatible: [
 				"5D70509D8EB63BFF"
@@ -524,9 +590,9 @@
 			]
 			id: "13AD287D36A0E27E"
 			tasks: [{
-				id: "1E0578174C07C7A4"
+				id: "5FC34EE97F4136F0"
 				type: "checkmark"
-				title: "Aspiring Witch"
+				title: "Click here to claim!"
 			}]
 			rewards: [
 				{
