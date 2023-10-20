@@ -1,0 +1,32 @@
+# not needed for repo/exports
+
+/.mixin.out/
+/crash-reports/
+/downloads/
+/essential/
+/global_packs/
+/lightspeed-cache/
+/logs/
+/modernfix/
+/profileImage/
+/quest_structures/
+/saves
+/screenshots/
+/shaderpacks/
+/.curseclient
+/servers.dat
+/servers.essential.dat
+/servers.dat_old
+/minecraftinstance.json
+/TrashSlotSaveState.json
+/usercache.json
+/usernamecache.json
+/knownkeys.txt
+/options.txt
+/WailaErrorOutput.txt
+/reauth.toml
+
+
+# I don't have the licensing to have this publicly lol
+
+/resourcepacks/Faithless Armory [Lucrative RPG] [indev]/
