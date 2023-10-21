@@ -1,6 +1,11 @@
 # I don't have the licensing to have this publicly lol
 
-/resourcepacks/Faithless Armory [Lucrative RPG] [indev]
+/resourcepacks/Faithless Armory [Lucrative RPG] [indev]/
+
+
+# Just testing thingz
+
+/resourcepacks/Lucrative-Mod Data Test/
 
 
 # not needed for repo/exports
@@ -8,6 +13,7 @@
 /.mixin.out/
 /config/modernstartupqol/
 /crash-reports/
+/debug/
 /downloads/
 /essential/
 /global_packs/
@@ -31,3 +37,8 @@ knownkeys.txt
 options.txt
 WailaErrorOutput.txt
 reauth.toml
+config/reforgium-renderer.properties
+config/sound_physics_remastered/occlusion.properties
+config/sound_physics_remastered/reflectivity.properties
+config/sound_physics_remastered/soundphysics.properties
+config/jei/world/local/New_World/bookmarks.ini
