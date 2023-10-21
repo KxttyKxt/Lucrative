@@ -19,8 +19,8 @@
 	"Troll Spawns Alongside Enderman" = 1.0
 	#(This is the only way in which Cinders will ever spawn - Disable at your own risk!)
 	"Cinder Replaces Blaze" = 0.2
-	"Tarantula Replaces Dripstone Caves Mobs" = 1.0
-	"Scorpion Replaces Desert Spider" = 1.0
+	"Tarantula Replaces Dripstone Caves Mobs" = 0.5
+	"Scorpion Replaces Desert Spider" = 0.8
 	"Illagers Replace Villagers" = 0.0
 	"Ravagers Replace Iron Golems" = 0.0
 	#Ravagers are replaced with Marauders on spawn, but only if they spawn in water
