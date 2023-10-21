@@ -1,3 +1,5 @@
+Disclaimer: this is my first-ever GitHub repository! The commits are a mess because this is all self-taught, and I still have plenty to learn!
+
 ---
 # Lucrative - RPG Looting and Conquering ~ 💎✨
 ##### (`Lucrative`)
